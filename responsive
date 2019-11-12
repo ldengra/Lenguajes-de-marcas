@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box; }
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+        .header h1 {
+            font-size: 50px;
+        }
+        .topnav {
+            background-color: #333;
+            overflow:hidden;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color:#f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .topnav a:hover {
+            background-color: #dddddd;
+            color: black;
+        }
+        .leftcolumn{
+            float: left;
+            width: 75%;
+        }
+        .rightcolumn{
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+        .fakeimg{
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+        .card{
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 800px){
+            .leftcolumn, .rightcolumn{
+                width: 100%;
+                padding: 0;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Mi página</h1>
+        <p>Diseñado modo responsive</p>
+    </div>
+
+    <div class="topnav">
+        <a href="#">Opción 1</a>
+        <a href="#">Opción 2</a>
+        <a href="#">Opción 3</a>
+        <a href="#" style="float:right">Opción 4</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Título tarjetita</h2>
+                <h5>Autor, 12 Noviembre 2019</h5>
+                <div class="fakeimg" style="height:200px;">Imagen</div>
+                <p>Pim pam pum, toma lacasitos</p>
+                <p>indibiningiiiii</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>Otra tarjetita</h2>
+                <div class="fakeimg" style="height:100px;">Imagen</div>
+                <p>che men vaig fill de puteee</p>
+            </div>
+            <div class="card">
+                <h3>Post poupular</h3>
+                <div class="fakeimg"><p>Imagen 1</p></div>
+                <div class="fakeimg"><p>Imagen 2</p></div>
+                <div class="fakeimg"><p>Imagen 3</p></div>
+            </div>
+            <div class="card">
+                <h3>Hola puta, me llamo bastardo, sigueme!</h3>
+                <p>haver hestudiao</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Fill de footer</h2>
+    </div>
+</body>
+</html>
